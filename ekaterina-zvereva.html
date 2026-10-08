@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Екатерина Зверева — ХАССП, ППК, ТУ и декларации</title>
+<meta name="description" content="Независимый эксперт по пищевой безопасности. ХАССП, ППК, технические условия, декларации и ISO 22000 по всей России.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0f172a;
+  --ink-soft: #1e3a5f;
+  --navy: #16324f;
+  --paper: #f6f3ec;
+  --paper-2: #ebe6db;
+  --cream: #fffdf8;
+  --muted: #5b6573;
+  --line: #d7d1c4;
+  --accent: #047857;
+  --accent-2: #059669;
+  --accent-fg: #f4fff9;
+  --danger: #b42318;
+  --shadow: 0 18px 40px -24px rgb(15 23 42 / 0.28);
+  --sans: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --display: "Fraunces", Georgia, serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--display); letter-spacing: -0.03em; line-height: 1.18; font-weight: 500; }
+h2, h3 { text-wrap: balance; }
+h1 { text-wrap: pretty; max-width: 22ch; }
+a { color: inherit; }
+button, [role="button"] { cursor: pointer; font-family: inherit; }
+.wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+header.bar {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+}
+.bar-row { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
+.mark { width: 36px; height: 36px; border-radius: 6px; background: var(--ink); color: var(--cream); display: grid; place-items: center; font-size: 11px; font-weight: 700; flex: none; }
+.brand b { display: block; font-family: var(--display); font-weight: 500; font-size: 17px; }
+.brand span { display: block; font-size: 11px; color: var(--muted); }
+nav.desk { display: none; align-items: center; gap: 4px; }
+nav.desk a, .drop > button {
+  background: none; border: 0; color: var(--ink-soft); text-decoration: none;
+  border-radius: 999px; padding: 8px 12px; font-size: 14px;
+}
+nav.desk a:hover, .drop > button:hover { color: var(--ink); }
+.cta {
+  display: none; height: 40px; align-items: center; padding: 0 16px; border-radius: 999px;
+  background: var(--accent); color: var(--accent-fg); text-decoration: none; font-size: 14px; font-weight: 600;
+}
+.menu-btn {
+  width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--line); background: var(--cream); color: var(--ink);
+}
+.drop { position: relative; }
+.menu {
+  display: none; position: absolute; right: 0; top: calc(100% + 8px); width: 340px;
+  background: var(--cream); border: 1px solid var(--line); border-radius: 16px; padding: 8px; box-shadow: var(--shadow);
+}
+.menu a { display: block; text-decoration: none; padding: 8px 12px; border-radius: 8px; font-size: 14px; }
+.menu a:hover { background: var(--paper-2); }
+.drop:hover .menu, .drop:focus-within .menu { display: block; }
+.mobile {
+  display: none; border-top: 1px solid var(--line); background: var(--cream); padding: 12px 16px 20px;
+}
+.mobile a { display: block; text-decoration: none; padding: 10px 8px; }
+.mobile .label { margin: 12px 8px 4px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.hero { background: var(--ink); color: var(--cream); position: relative; overflow: hidden; }
+.hero::after {
+  content: ""; position: absolute; inset: 0 0 0 40%;
+  background: radial-gradient(circle at 70% 30%, rgb(5 150 105 / .16), transparent 55%);
+  pointer-events: none;
+}
+.hero-grid, .split, .cards, .quad, .steps, .industries { position: relative; z-index: 1; }
+.hero-grid { display: grid; gap: 40px; padding: 64px 0 72px; }
+.kicker { font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent-2); margin: 0 0 12px; }
+.hero h1 { font-size: clamp(1.7rem, 4vw, 2.75rem); margin: 0; max-width: 18ch; }
+.lead { color: color-mix(in srgb, var(--cream) 75%, transparent); max-width: 38rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px;
+  border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 14px; border: 1px solid transparent;
+}
+.btn.primary { background: var(--accent); color: var(--accent-fg); }
+.btn.ghost { border-color: color-mix(in srgb, var(--cream) 28%, transparent); color: var(--cream); background: transparent; }
+.btn.dark { background: var(--ink); color: var(--cream); }
+.badges { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 32px 0 0; padding: 0; list-style: none; }
+.badges li {
+  display: flex; gap: 8px; align-items: center; border: 1px solid color-mix(in srgb, var(--cream) 12%, transparent);
+  background: color-mix(in srgb, var(--cream) 6%, transparent); border-radius: 10px; padding: 10px 12px; font-size: 12px;
+}
+.panel {
+  align-self: end; border: 1px solid color-mix(in srgb, var(--cream) 12%, transparent);
+  background: color-mix(in srgb, var(--cream) 6%, transparent); border-radius: 22px; padding: 28px;
+}
+.panel p:last-child, .panel ul { margin-bottom: 0; }
+.panel ul { list-style: none; padding: 0; margin: 20px 0 0; }
+.panel li { border-top: 1px solid color-mix(in srgb, var(--cream) 12%, transparent); padding-top: 12px; margin-top: 12px; color: color-mix(in srgb, var(--cream) 75%, transparent); font-size: 14px; }
+section.block { padding: 72px 0; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin: 0; }
+.intro { max-width: 42rem; color: var(--muted); }
+.cards { display: grid; gap: 16px; margin-top: 32px; }
+.card {
+  background: var(--cream); border: 1px solid var(--line); border-radius: 22px; padding: 24px; box-shadow: var(--shadow);
+  display: flex; flex-direction: column; min-height: 100%;
+}
+.card h3 { margin: 14px 0 8px; font-size: 1.25rem; }
+.card p { margin: 0; color: var(--muted); font-size: 14px; flex: 1; }
+.more { margin-top: 18px; color: var(--accent); font-weight: 600; font-size: 14px; text-decoration: none; }
+.band { background: var(--paper-2); }
+.band-ink { background: var(--ink); color: var(--cream); }
+.band-navy { background: var(--navy); color: var(--cream); }
+.muted-on-dark { color: color-mix(in srgb, var(--cream) 72%, transparent); }
+.steps { display: grid; gap: 12px; margin-top: 28px; }
+.step { background: var(--cream); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+.step .n { color: var(--accent); font-family: var(--display); font-size: 1.5rem; margin: 0; }
+.quad { display: grid; gap: 12px; margin-top: 28px; }
+.tile { border-radius: 18px; padding: 20px; }
+.tile.light { background: var(--cream); border: 1px solid var(--line); }
+.tile.dark { background: color-mix(in srgb, var(--cream) 6%, transparent); border: 1px solid color-mix(in srgb, var(--cream) 12%, transparent); }
+.tile p { color: var(--muted); font-size: 14px; }
+.tile.dark p { color: color-mix(in srgb, var(--cream) 70%, transparent); }
+.faq { margin-top: 28px; background: var(--cream); border: 1px solid var(--line); border-radius: 18px; }
+.faq button {
+  width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--line);
+  padding: 16px 20px; font-weight: 600; color: var(--ink); font-size: 15px;
+}
+.faq button:first-child { border-top: 0; }
+.faq p { margin: 0; padding: 0 20px 16px; color: var(--muted); font-size: 14px; }
+.page-hero { background: var(--ink); color: var(--cream); padding: 64px 0 72px; }
+.page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0; max-width: 18ch; }
+.checks { list-style: none; padding: 0; margin: 18px 0 0; }
+.checks li { display: flex; gap: 10px; padding: 8px 0; font-size: 14px; color: var(--ink-soft); }
+.checks i { color: var(--accent); font-style: normal; }
+.result { background: var(--paper-2); border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin-top: 22px; }
+form.form, .ok {
+  background: var(--cream); border: 1px solid var(--line); border-radius: 22px; padding: 24px; box-shadow: var(--shadow);
+}
+label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+input, select, textarea {
+  width: 100%; margin-top: 6px; min-height: 48px; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--cream); padding: 10px 14px; font: inherit; color: var(--ink);
+}
+textarea { min-height: 120px; resize: vertical; }
+.err { color: var(--danger); font-size: 12px; font-weight: 500; }
+.fine { font-size: 12px; color: var(--muted); }
+footer { background: var(--ink); color: var(--cream); padding: 48px 0 20px; }
+.foot { display: grid; gap: 28px; }
+footer a { color: color-mix(in srgb, var(--cream) 82%, transparent); text-decoration: none; font-size: 14px; display: block; padding: 4px 0; }
+footer h3 { font-family: var(--sans); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: color-mix(in srgb, var(--cream) 50%, transparent); }
+.legal { border-top: 1px solid color-mix(in srgb, var(--cream) 12%, transparent); margin-top: 28px; padding-top: 16px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 12px; color: color-mix(in srgb, var(--cream) 50%, transparent); }
+@media (min-width: 760px) {
+  .brand span, nav.desk, .cta { display: flex; }
+  .menu-btn { display: none; }
+  .cards, .quad { grid-template-columns: 1fr 1fr; }
+  .badges { grid-template-columns: repeat(4, 1fr); }
+  .hero-grid, .split { grid-template-columns: 1.1fr .9fr; }
+  .foot { grid-template-columns: 1.15fr .85fr .85fr; }
+  .steps { grid-template-columns: repeat(5, 1fr); }
+  .industries, .quad.four { grid-template-columns: repeat(3, 1fr); }
+  .quad.four { grid-template-columns: repeat(4, 1fr); }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .span2 { grid-column: 1 / -1; }
+}
+@media (max-width: 759px) {
+  .mobile.open { display: block; }
+  .hero::after { display: none; }
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-row">
+    <a class="brand" href="#/">
+      <span class="mark">ЕЗ</span>
+      <span><b>Екатерина Зверева</b><span>Пищевая безопасность</span></span>
+    </a>
+    <nav class="desk" id="desk"></nav>
+    <a class="cta" href="#/kontakty">Консультация</a>
+    <button class="menu-btn" id="burger" aria-label="Меню">☰</button>
+  </div>
+  <div class="mobile" id="mobile"></div>
+</header>
+<main id="app"></main>
+<footer>
+  <div class="wrap foot" id="foot"></div>
+  <div class="wrap legal"><span>© <span id="year"></span> Екатерина Зверева</span><span>Экспертное сопровождение предприятий пищевой отрасли</span></div>
+</footer>
+<script>
+const services = [
+  ["haccp","Разработка и внедрение ХАССП","Система ХАССП по ГОСТ Р 51705.1-2024 и принципам Codex: анализ опасностей, ККТ, критические пределы и корректирующие действия.","ХАССП — не папка для проверки, а рабочая система контроля опасностей на вашем предприятии.","Документированная и внедрённая система ХАССП, готовая к проверкам Роспотребнадзора и аудитам сетей.",["Анализ опасностей по сырью, процессам и готовой продукции","Определение ККТ, критических пределов и мониторинга","Корректирующие действия, верификация и валидация","Рабочие журналы и формы, которые персонал реально заполняет","Сопровождение при внедрении и первой проверке"],"Производства, переработка, общественное питание, склады и логистика пищевой продукции."],
+  ["ppk","Программа производственного контроля","Разработка и актуализация ППК для производства, переработки и общественного питания.","ППК связывает санитарные требования, лабораторный контроль и фактические процессы предприятия.","Актуальная программа производственного контроля без копипаста из чужих документов.",["Описание объектов, процессов и точек контроля","План лабораторных исследований с обоснованной периодичностью","Санитарно-противоэпидемические мероприятия","Актуализация при смене ассортимента, оборудования или адреса","Согласование с действующими СанПиН и ТР ТС"],"Предприятия, которым нужна рабочая ППК, а не формальный документ «для полки»."],
+  ["tu","Разработка технических условий","ТУ на пищевую продукцию в соответствии с ТР ТС и действующими ГОСТами.","Технические условия фиксируют рецептуру, показатели безопасности и требования к маркировке.","Комплект ТУ, готовый к декларированию и использованию в производстве.",["Структура ТУ под конкретный ассортимент","Нормы по органолептике, физико-химии и безопасности","Требования к сырью, упаковке и срокам годности","Согласование с ТР ТС 021, 022 и профильными регламентами","Сопроводительные документы для декларации"],"Производители собственной торговой марки и предприятия с уникальным ассортиментом."],
+  ["deklaracii","Декларации о соответствии","Оформление деклараций по ТР ТС 021, 022, 029 и другим регламентам. Доказательная база и маркировка.","Декларация держится на доказательной базе: протокола недостаточно, если ТУ и маркировка не согласованы.","Корректно оформленная декларация и понятный пакет доказательств для контролирующих органов.",["Подбор схемы декларирования и перечня регламентов","Формирование доказательной базы и протоколов","Проверка маркировки по ТР ТС 022","Сопровождение регистрации декларации","Рекомендации по хранению комплекта документов"],"Производители и импортёры пищевой продукции, выводящие товар в оборот на рынке ЕАЭС."],
+  ["iso-22000","ISO 22000 / ГОСТ Р ИСО 22000-2019","Внедрение и подготовка к сертификации системы менеджмента безопасности пищевой продукции.","ISO 22000 выстраивает управление безопасностью как систему, а не набор разрозненных процедур.","СМБПП, готовая к сертификационному аудиту, с понятными ролями и записями.",["Контекст организации, политика и цели СМБПП","PRP, операционные PRP и план ХАССП внутри ISO","Управление документацией, записями и несоответствиями","Внутренний аудит и анализ со стороны руководства","Подготовка персонала к сертификационному аудиту"],"Предприятия, которым нужна сертификация для сетей, экспорта или корпоративных требований."],
+  ["audity","Внутренние аудиты","Аудиты СМБПП и ХАССП: несоответствия, причины и практичные рекомендации по устранению.","Независимый взгляд выявляет разрыв между документами и реальной работой смены.","Отчёт с приоритизированными несоответствиями и планом корректирующих действий.",["Аудит по ГОСТ Р 51705.1-2024, ISO 22000 или требованиям сети","Проверка записей, ККТ и санитарного состояния","Интервью с персоналом без формального допроса","Классификация несоответствий по риску","Сопровождение устранения до повторной проверки"],"Предприятия перед проверкой, сертификацией или аудитом торговой сети."],
+  ["obuchenie","Обучение персонала","Обучение принципам ХАССП, требованиям СанПиН и ТР ТС — для руководителей и линейного персонала.","Система работает только если смена понимает, зачем заполняет журналы и где остановить процесс.","Программа обучения под роли на предприятии и подтверждающие материалы.",["Программы для руководства, технологов и линейного персонала","Разбор реальных нарушений и типовых замечаний проверок","Практикумы по заполнению записей и действиям при отклонении","Онлайн-формат и выезд на предприятие","Материалы, которые остаются у заказчика"],"Предприятия, которые внедряют систему и хотят, чтобы персонал её применял."]
+];
+const industries = {
+  proizvodstvo: ["Пищевое производство","Для цеха и завода документы должны описывать линии, а не абстрактную «пищевую деятельность».",["На производстве чаще всего ломается связка ассортимента, ТУ и плана ХАССП: в декларации один перечень, в цехе — другой, а критические точки списаны с чужого предприятия.","Работа начинается с карты процессов. Затем — опасности по сырью и этапам, ППК с обоснованной лабораторной программой, ТУ на фактическую рецептуру и, при необходимости, подготовка к ISO 22000."],["Карта процессов и анализ опасностей по линиям","Документы под фактический ассортимент, а не шаблон отрасли","Подготовка к проверкам и аудитам сетей"],["Запуск нового цеха или расширение ассортимента","Замечания Роспотребнадзора по ХАССП и ППК","Требование сети предоставить сертификат СМБПП"],["haccp","ppk","tu","deklaracii","iso-22000"]],
+  pererabotka: ["Переработка сырья","Переработка держится на контроле сырья и прослеживаемости партий — шаблон «как у готовых блюд» здесь не работает.",["Мясное, молочное, рыбное и овощное сырьё задают разные опасности и разные режимы. ТУ и декларации должны совпадать с технологией, а не с желаемым маркетинговым названием продукта.","В работе — входной контроль, этапы обработки, упаковка, сроки годности и записи, которые можно вести в реальном ритме смены."],["Контроль входящего сырья и критических этапов обработки","Сроки годности, упаковка и прослеживаемость партий","Согласование ТУ и деклараций с реальной технологией"],["Новая линейка полуфабрикатов или консервов","Смена поставщика сырья и пересмотр опасностей","Декларирование продукции с нестандартной рецептурой"],["haccp","ppk","tu","deklaracii","iso-22000"]],
+  obshchepit: ["Общественное питание","На кухне система должна быть короткой и исполнимой: толстый том ХАССП персонал просто не откроет.",["Для ресторана, столовой и комбината питания важны хранение, обработка, раздача и санитарные режимы. Документы пишутся под фактическое меню и смену, а не под заводской стандарт.","Обучение линейного персонала здесь не приложение, а часть внедрения: журналы начинают жить только после разбора типовых ошибок на конкретных станциях."],["Документы, которые можно вести в условиях кухни","Санитарные процессы, хранение и раздача","Обучение персонала без академического языка"],["Открытие объекта или проверка после предписания","Сеть общепита с едиными, но разными по площадкам процессами","Обучение поваров и заведующих производством"],["haccp","ppk","obuchenie","audity"]]
+};
+const faqs = [
+  ["Чем экспертное сопровождение отличается от «внедрения ХАССП под ключ»?","ХАССП — только часть нормативного контура. Предприятию обычно нужны ещё ППК, ТУ, декларации, обучение и иногда ISO 22000. Я собираю систему целиком и привязываю её к вашим процессам, а не продаю один типовой комплект."],
+  ["Можно ли сделать всё дистанционно?","Да, большую часть диагностики, разработки документов и обучения провожу дистанционно. Выезд подключаю, когда нужно увидеть цех, разобрать ККТ на месте или провести внутренний аудит."],
+  ["Сколько занимает разработка?","Экспресс-аудит — от нескольких дней. Комплект ХАССП и ППК для небольшого объекта — обычно 2–4 недели. Сроки зависят от полноты исходных данных, ассортимента и готовности персонала."],
+  ["Вы регистрируете декларации самостоятельно?","Собираю доказательную базу, проверяю ТУ и маркировку, готовлю пакет и сопровождаю регистрацию. Юридически декларацию принимает заявитель — производитель или уполномоченное лицо."],
+  ["Работаете ли вы с небольшими производствами и общепитом?","Да. Формат документов и объём контроля должны соответствовать масштабу. Для столовой и для завода нужны разные решения — шаблон «как у крупного комбината» только мешает."],
+  ["Что нужно, чтобы начать?","Краткое описание деятельности, ассортимент, действующие документы, если они есть, и задача: проверка, запуск, сертификация или устранение замечаний. Дальше предлагаю понятный план работ."]
+];
+const topics = ["Консультация","Бесплатный экспресс-аудит","ХАССП","ППК","Технические условия","Декларации","ISO 22000","Аудит","Обучение"];
+const svc = id => services.find(s => s[0] === id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&','<':'<','>':'>','"':'"',"'":'&#39;'}[c]));
+function nav() {
+  const links = [['#/','Главная'],['#/o-specialiste','Об эксперте'],['#/kontakty','Контакты']];
+  document.getElementById('desk').innerHTML = links.map(([h,t]) => `<a href="${h}">${t}</a>`).join('') +
+    `<div class="drop"><button type="button">Услуги</button><div class="menu">${services.map(s => `<a href="#/uslugi/${s[0]}">${esc(s[1])}</a>`).join('')}</div></div>` +
+    `<a href="#/otrasli/proizvodstvo">Отрасли</a>`;
+  document.getElementById('mobile').innerHTML =
+    links.map(([h,t]) => `<a href="${h}">${t}</a>`).join('') +
+    `<div class="label">Услуги</div>` + services.map(s => `<a href="#/uslugi/${s[0]}">${esc(s[1])}</a>`).join('') +
+    `<div class="label">Отрасли</div>` + Object.entries(industries).map(([id,v]) => `<a href="#/otrasli/${id}">${esc(v[0])}</a>`).join('') +
+    `<a class="btn primary" href="#/kontakty" style="margin-top:12px">Получить консультацию</a>`;
+  document.getElementById('foot').innerHTML = `
+    <div><p style="font-family:var(--display);font-size:1.6rem;margin:0">Екатерина Зверева</p><p class="muted-on-dark">Независимый эксперт по нормативному обеспечению пищевой безопасности. Работа по всей России.</p></div>
+    <div><h3>Услуги</h3>${services.map(s => `<a href="#/uslugi/${s[0]}">${esc(s[1])}</a>`).join('')}</div>
+    <div><h3>Отрасли</h3>${Object.entries(industries).map(([id,v]) => `<a href="#/otrasli/${id}">${esc(v[0])}</a>`).join('')}<h3 style="margin-top:22px">Разделы</h3><a href="#/o-specialiste">Об эксперте</a><a href="#/kontakty">Контакты</a><a href="#/politika">Политика конфиденциальности</a></div>`;
+}
+function cta() {
+  return `<section class="band-navy"><div class="wrap block" style="display:flex;flex-wrap:wrap;gap:24px;align-items:end;justify-content:space-between"><div style="max-width:40rem"><p class="kicker">Следующий шаг</p><h2>Пришлите текущие документы — разберём, чего не хватает</h2><p class="muted-on-dark">Экспресс-аудит показывает разрывы между ХАССП, ППК, ТУ и фактическими процессами.</p></div><a class="btn primary" href="#/kontakty">Получить консультацию</a></div></section>`;
+}
+function form(topic) {
+  const opts = topics.map(t => `<option ${t===topic?'selected':''}>${esc(t)}</option>`).join('');
+  return `<form class="form" id="lead"><div class="form-grid">
+    <label>Имя<input name="name" required minlength="2" placeholder="Как к вам обращаться"></label>
+    <label>Организация<input name="company" required minlength="2" placeholder="Название предприятия"></label>
+    <label>Телефон или почта<input name="contact" required minlength="5" placeholder="+7 или email"></label>
+    <label>Тема<select name="topic">${opts}</select></label>
+    <label class="span2">Задача<textarea name="message" required minlength="10" placeholder="Тип предприятия, документы и нужный результат"></textarea></label>
+  </div><p class="fine">Нажимая кнопку, вы соглашаетесь с <a href="#/politika">политикой конфиденциальности</a>. Заявка сохраняется только в этом браузере — для передачи Екатерине отправьте файл или скрин.</p><button class="btn primary" type="submit">Отправить заявку</button><p class="err" id="ferr"></p></form>`;
+}
+function home() {
+  return `<section class="hero"><div class="wrap hero-grid"><div>
+    <p class="kicker">Екатерина Зверева · независимый эксперт</p>
+    <h1>ХАССП, ППК, ТУ и декларации о соответствии для пищевых предприятий по всей России</h1>
+    <p class="lead">Внедрение систем менеджмента по ISO 22000 и ГОСТ Р 51705.1-2024. Действующие сертификаты специалиста. Работаю с производствами, переработкой и предприятиями общественного питания.</p>
+    <div class="actions"><a class="btn primary" href="#/kontakty">Получить консультацию</a><a class="btn ghost" href="#/kontakty?topic=Бесплатный экспресс-аудит">Бесплатный экспресс-аудит</a></div>
+    <ul class="badges"><li>Вся Россия</li><li>ISO 22000</li><li>ГОСТ Р 51705.1-2024</li><li>Дистанционно и с выездом</li></ul>
+  </div><aside class="panel"><p class="kicker">Не лендинг одной услуги</p><h2 style="font-size:1.7rem">Комплексное нормативное обеспечение пищевой безопасности</h2><ul><li>Отдельные страницы под каждую услугу и отрасль</li><li>Личный бренд независимого эксперта, а не «компании по ХАССП»</li><li>Документы, которые живут в цехе, а не только в папке к проверке</li></ul></aside></div></section>
+  <section class="block wrap"><p class="kicker">Услуги</p><h2>Не только ХАССП — полный контур пищевой безопасности</h2><p class="intro">Каждое направление — отдельная страница, чтобы было видно, как услуга стыкуется с остальными документами предприятия.</p><div class="cards">${services.map(s => `<article class="card"><h3>${esc(s[1])}</h3><p>${esc(s[2])}</p><a class="more" href="#/uslugi/${s[0]}">Подробнее</a></article>`).join('')}</div></section>
+  <section class="band"><div class="wrap block"><p class="kicker">Ситуации</p><h2>Когда предприятию нужен не шаблон, а эксперт</h2><div class="cards">${[["Документы есть, а на проверке — замечания","Шаблоны из интернета не совпадают с вашими процессами. Инспектор видит расхождение за первые полчаса."],["Нужно «внедрить ХАССП», но непонятно с чего начать","ХАССП, ППК, ТУ и декларации связаны. Если собирать их по отдельности, система разваливается."],["Сеть или покупатель запросили ISO 22000","Сертификация не проходит, если записи не живут в ежедневной работе."],["Сменился ассортимент, цех или поставщик","ППК и ТУ устаревают быстрее, чем кажется. Актуализация дешевле переделки после предписания."]].map(([t,d]) => `<article class="card"><h3>${esc(t)}</h3><p>${esc(d)}</p></article>`).join('')}</div></div></section>
+  <section class="block wrap"><p class="kicker">Как устроена работа</p><h2>От диагностики до сопровождения</h2><div class="steps">${[["01","Диагностика","Экспресс-аудит документов и процессов: что уже работает и какой комплект нужен."],["02","Проектирование","Структура документов под фактическую схему производства."],["03","Разработка","ХАССП, ППК, ТУ или пакет к декларации — рабочими формулировками."],["04","Внедрение","Обучение, запуск записей, выезд или дистанционное сопровождение."],["05","Сопровождение","Актуализация, внутренний аудит и подготовка к проверке."]].map(([n,t,d]) => `<article class="step"><p class="n">${n}</p><h3>${t}</h3><p>${d}</p></article>`).join('')}</div></section>
+  <section class="band-ink"><div class="wrap block"><p class="kicker">Квалификация</p><h2>Действующие сертификаты и практика внедрения</h2><div class="quad four">${[["ISO 22000:2018","Действующий сертификат специалиста. Внедрение СМБПП и подготовка к сертификации."],["ГОСТ Р 51705.1-2024","Действующий сертификат и опыт внедрения ХАССП на производствах и в общепите."],["ТР ТС 021 / 022 / 029","Декларации, маркировка и доказательная база для выпуска продукции в оборот."],["Вся Россия","Дистанционно и с выездом. Производство, переработка и общественное питание."]].map(([t,d]) => `<article class="tile dark"><h3>${t}</h3><p>${d}</p></article>`).join('')}</div></div></section>
+  <section class="block wrap"><p class="kicker">Отрасли</p><h2>Производство, переработка и общественное питание</h2><div class="cards industries">${Object.entries(industries).map(([id,v]) => `<a class="card" href="#/otrasli/${id}" style="text-decoration:none"><h3>${esc(v[0])}</h3><p>${esc(v[1])}</p><span class="more">Смотреть направление</span></a>`).join('')}</div></section>
+  <section class="band"><div class="wrap block"><p class="kicker">Вопросы</p><h2>Коротко о формате работы</h2><div class="faq" id="faq">${faqs.map((f,i) => `<button type="button" data-i="${i}">${esc(f[0])}</button><p hidden>${esc(f[1])}</p>`).join('')}</div></div></section>
+  ${cta()}`;
+}
+function servicePage(id) {
+  const s = svc(id); if (!s) return missing();
+  const others = services.filter(x => x[0] !== id);
+  return `<section class="page-hero"><div class="wrap"><p class="kicker">Услуга</p><h1>${esc(s[1])}</h1><p class="lead">${esc(s[3])}</p></div></section>
+  <section class="block wrap split" style="display:grid;gap:36px"><div><p class="intro">${esc(s[2])}</p><h2 style="margin-top:28px;font-size:1.6rem">Что входит в работу</h2><ul class="checks">${s[5].map(p => `<li><i>✓</i><span>${esc(p)}</span></li>`).join('')}</ul><div class="result"><p class="kicker">Результат</p><p>${esc(s[4])}</p><p class="fine">${esc(s[6])}</p></div></div><div><h2 style="font-size:1.4rem">Заявка по этой услуге</h2>${form(s[1])}</div></section>
+  <section class="block wrap" style="padding-top:0"><h2 style="font-size:1.6rem">Связанные направления</h2><div class="cards">${others.map(o => `<a class="card" href="#/uslugi/${o[0]}" style="text-decoration:none"><h3>${esc(o[1])}</h3></a>`).join('')}</div></section>${cta()}`;
+}
+function industryPage(id) {
+  const v = industries[id]; if (!v) return missing();
+  return `<section class="page-hero"><div class="wrap"><p class="kicker">Отрасль</p><h1>${esc(v[0])}</h1><p class="lead">${esc(v[1])}</p></div></section>
+  <section class="block wrap split" style="display:grid;gap:36px"><div>${v[2].map(p => `<p class="intro">${esc(p)}</p>`).join('')}<ul class="checks">${v[3].map(p => `<li><i>✓</i><span>${esc(p)}</span></li>`).join('')}</ul></div>
+  <aside><h2 style="font-size:1.6rem">Типовые задачи</h2><ul class="checks">${v[4].map(p => `<li><span>${esc(p)}</span></li>`).join('')}</ul><h2 style="font-size:1.6rem;margin-top:28px">Релевантные услуги</h2><div class="cards">${v[5].map(sid => `<a class="card" href="#/uslugi/${sid}" style="text-decoration:none"><h3>${esc(svc(sid)[1])}</h3></a>`).join('')}</div></aside></section>${cta()}`;
+}
+function about() {
+  return `<section class="page-hero"><div class="wrap"><p class="kicker">Об эксперте</p><h1>Личный экспертный бренд, а не ещё одна компания «по внедрению ХАССП»</h1><p class="lead">Екатерина Зверева сопровождает пищевые предприятия по всей России: от программы производственного контроля и технических условий до системы менеджмента по ISO 22000.</p></div></section>
+  <section class="block wrap split" style="display:grid;gap:36px"><div><h2>Почему такой формат сильнее типового подрядчика</h2><p class="intro">Компании, которые продают только внедрение ХАССП, оставляют предприятие с разрозненными ТУ, ППК и декларацией. На проверке это видно сразу.</p><p class="intro">Комплексное сопровождение собирает контур целиком: декларация опирается на ТУ, ТУ — на рецептуру, ХАССП — на реальные ККТ, ППК — на лабораторный контроль. ISO 22000 подключается, когда нужна сертификация.</p><p class="intro">География — вся Россия. Основной формат дистанционный, выезд — когда без осмотра цеха нельзя корректно описать опасности.</p></div>
+  <aside class="card"><p class="kicker">Компетенции</p><h3>ISO 22000:2018</h3><p>Действующий сертификат. Внедрение СМБПП.</p><h3>ГОСТ Р 51705.1-2024</h3><p>Сертификат и опыт внедрения ХАССП.</p><h3>ТР ТС 021 / 022 / 029</h3><p>Декларации, маркировка, доказательная база.</p></aside></section>${cta()}`;
+}
+function contacts(topic) {
+  return `<section class="block wrap split" style="display:grid;gap:36px"><div><p class="kicker">Контакты</p><h1 style="font-size:clamp(2rem,4vw,3rem)">Опишите предприятие — предложу понятный следующий шаг</h1><p class="intro">Консультация и экспресс-аудит документов. Укажите тип объекта, ассортимент и что уже есть: ППК, ХАССП, ТУ, декларации.</p><div class="cards" style="margin-top:20px"><article class="card"><p>География: вся Россия</p></article><article class="card"><p>Формат: дистанционно и с выездом</p></article></div></div><div>${form(topic || 'Консультация')}</div></section>`;
+}
+function privacy() {
+  return `<article class="block wrap" style="max-width:760px"><h1>Политика конфиденциальности</h1><p class="intro">Политика описывает сведения, которые вы оставляете в форме обратной связи на сайте Екатерины Зверевой.</p><h2>Какие данные собираются</h2><p class="intro">Имя, название организации, контакт для связи и описание задачи.</p><h2>Для чего используются данные</h2><p class="intro">Только чтобы ответить на заявку и предложить условия консультации или разработки документов. Рассылки третьим лицам не формируются.</p><h2>Срок хранения</h2><p class="intro">Данные хранятся, пока ведётся переписка, и удаляются после завершения работы либо по вашей просьбе.</p><p class="fine">В этом HTML-файле заявка не уходит на сервер: она остаётся только на экране вашего браузера.</p></article>`;
+}
+function missing() { return `<section class="block wrap"><h1>Страница не найдена</h1><p><a href="#/">На главную</a></p></section>`; }
+function bind() {
+  const f = document.getElementById('lead');
+  if (f) f.addEventListener('submit', e => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(f));
+    if ((data.name||'').trim().length < 2 || (data.message||'').trim().length < 10) {
+      document.getElementById('ferr').textContent = 'Заполните имя и опишите задачу чуть подробнее.';
+      return;
+    }
+    f.outerHTML = `<div class="ok"><h2>Заявка принята</h2><p class="intro">Спасибо. В этой версии сайта данные никуда не отправляются. Перешлите Екатерине имя, организацию и текст задачи — или оставьте заявку после публикации сайта.</p></div>`;
+  });
+  const faq = document.getElementById('faq');
+  if (faq) faq.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const p = b.nextElementSibling;
+    const open = p.hidden;
+    faq.querySelectorAll('p').forEach(x => x.hidden = true);
+    p.hidden = !open;
+  });
+  document.querySelectorAll('#mobile a').forEach(a => a.addEventListener('click', () => document.getElementById('mobile').classList.remove('open')));
+}
+function render() {
+  const raw = (location.hash || '#/').slice(1);
+  const [path, query] = raw.split('?');
+  const topic = new URLSearchParams(query || '').get('topic');
+  const parts = path.split('/').filter(Boolean);
+  let html = home();
+  if (parts[0] === 'o-specialiste') html = about();
+  else if (parts[0] === 'kontakty') html = contacts(topic);
+  else if (parts[0] === 'politika') html = privacy();
+  else if (parts[0] === 'uslugi' && parts[1]) html = servicePage(parts[1]);
+  else if (parts[0] === 'otrasli' && parts[1]) html = industryPage(parts[1]);
+  document.getElementById('app').innerHTML = html;
+  document.title = parts.length ? 'Екатерина Зверева — пищевая безопасность' : 'Екатерина Зверева — ХАССП, ППК, ТУ и декларации';
+  bind();
+  window.scrollTo(0, 0);
+}
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('burger').addEventListener('click', () => document.getElementById('mobile').classList.toggle('open'));
+nav();
+window.addEventListener('hashchange', render);
+render();
+</script>
+</body>
+</html>
